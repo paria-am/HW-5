@@ -1,6 +1,6 @@
 import turtle
 import numpy as np
-
+import random
 
 def main(speed=0, bg_color="grey"):
     # create Turtle object
@@ -24,6 +24,13 @@ def main(speed=0, bg_color="grey"):
         """TODO: set snowflake color here (one of the colors defined above)"""
 
         # Go to the start position of the snowflake
+    
+        r = random.randint(0,255)
+        g = random.randint(0,255)
+        b = random.randint(0,255)
+        snow_color = (r,g,b)
+        turtle.colormode(255)
+        myTurtle.color(snow_color)
         myTurtle.penup()
         myTurtle.goto(pos[0], pos[1])
         myTurtle.pendown()
