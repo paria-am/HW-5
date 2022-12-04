@@ -1,8 +1,12 @@
 import turtle
 import numpy as np
 import random
+from importlib.metadata import version 
 
 def main(speed=0, bg_color="grey"):
+    version('turtle')
+    version('numpy')
+    version('random')
     # create Turtle object
     turtle_screen = turtle.Screen()
     myTurtle = turtle.Turtle()
