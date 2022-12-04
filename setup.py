@@ -12,4 +12,5 @@ setup(
 		"console_scripts":[
 			"snowflake-cli = snowflake.let_it_snow:main"
 		],
+	},
 )
